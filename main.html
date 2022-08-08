@@ -1,0 +1,113 @@
+<!DOCTYPE html>         <!-- 동영상 배경에 텍스트 올리기 -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="프로필 링크">
+    <meta property="og:description" content="-">
+    <meta property="og:image" content="티라노.png">
+    <title>My profile</title>
+    <style>
+        video{
+            position: fixed; right: 0; bottom: 0;
+            min-width: 100%; min-height: 100%;
+            width: auto; height: auto; z-index: -100;
+            background: url(video.mp4) no-repeat;
+            background-size: cover;     
+            
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+        * {
+            font-family: 'Kanit', sans-serif;
+
+        }
+        header{
+            
+            z-index: 1000;
+        }
+        .profile{
+            width: 100px;
+            height: 100px;
+
+            background-color: white;
+            border-radius: 100%;
+
+            border : 2px solid white;
+
+            background-image: url('티라노.jpg');
+            background-position: center;
+            background-size: cover;
+        }
+        .main{
+            color: black;
+            font-size: 20px;
+
+            margin-top: 30px;
+            margin-bottom: 10px;
+        }
+        .sub{
+            color: black;
+            font-size: 15px;
+
+            margin-top: 0px;
+            margin-bottom: 30px;
+        }
+        .wrap{
+            width: 300px;
+            margin: 30px auto 0px auto;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .wrap > a {
+            width: 300px;
+            height: 50px;
+
+            margin-bottom: 10px;
+
+            background-color: aliceblue;
+            border-radius: 10px;
+
+            border-bottom: 10px;
+
+            font-size: 14px;
+            font-weight: bold;
+            color: #ffaf90;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            text-decoration: none;
+
+            box-shadow: 3px 3px 2px 0px rgb(117, 117, 117);
+            
+        }
+        .wrap > a:hover {
+            background-color: #f2f2f2;
+            
+        }
+    </style>
+</head>
+<header>
+    <video src="video.mp4" muted autoplay loop></video>
+    <div class="wrap">
+        <div class="profile"></div>
+        <h1 class="main">My Profile</h1>
+        <p class="sub">List</p>
+        <a target="_blank" href="https://rarible.com/user/0x8d05708433a4662904809bbe6332e5de1f7cb755/sale">Rarible</a>
+        <a target="_blank" href="https://www.instagram.com/00._.hoon/">Instagram</a>
+        <a target="_blank" href="https://www.instagram.com/hoon_10101/">Instagram (sub)</a>
+        <a target="_blank" href="https://twitter.com/gks10045">Twitter</a>
+        <a target="_blank" href="https://www.youtube.com/channel/UCtH0dyI97sCtx6hKHe4x0_Q">Youtube</a>
+   </div>
+</header>
+<body>
+    
+</body>
+</html>
